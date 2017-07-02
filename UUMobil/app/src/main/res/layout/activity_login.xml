@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.berkay.uumobil.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/uluLogo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ulu_logo" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uluLogo"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:focusedByDefault="false"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:gravity="center"
+            android:fontFamily="sans-serif"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/login"
+            android:onClick="log_in"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_alignParentRight="true"
+            android:text="@string/donAskAgain"
+            android:checked="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/faceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/facebook_icon"
+                android:contentDescription="@string/facebookButton"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/twitterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/twitter_icon"
+                android:layout_toRightOf="@id/faceButton"
+                android:contentDescription="@string/twitterButton"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/webSiteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/web_icon"
+                android:layout_toRightOf="@id/twitterButton"
+                android:contentDescription="@string/webButton"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/instagramButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/instagram_icon"
+                android:layout_toRightOf="@id/webSiteButton"
+                android:contentDescription="@string/webButton"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UÜMobil</string>
+    <string name="username">Kullanici Adi</string>
+    <string name="password">Sifre</string>
+    <string name="login">Giris</string>
+    <string name="donAskAgain">Bir daha sorma</string>
+
+    <string name="facebookButton">UU_Facebook</string>
+    <string name="twitterButton">UU_Twitter</string>
+    <string name="webButton">UU_Web_page</string>
+
+    <string name="noName">---- ISIM YOK ----</string>
+    <string name="okulNo">Okul Numarasi:</string>
+    <string name="fakulte">Birim:</string>
+    <string name="bolum">Bolum:</string>
+    <string name="ogrDurum">Ogrenci Tipi:</string>
+    <string name="kayitDurum">Kayit Durumu:</string>
+
+
+</resources>

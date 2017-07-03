@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#04a5b7</color>
     <color name="colorBack">#C1C7C9</color>
+
+    <color name="cokBasari">#42f453</color>
+    <color name="basari">#b8f441</color>
+    <color name="basarisiz">#f49741</color>
+    <color name="cokBasarisiz">#e21f1f</color>
 </resources>

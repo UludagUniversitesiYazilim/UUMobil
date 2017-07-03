@@ -16,5 +16,28 @@
     <string name="ogrDurum">Ogrenci Tipi:</string>
     <string name="kayitDurum">Kayit Durumu:</string>
 
+    <string-array name="dersler">
+        <item>Ders - 1</item>
+        <item>Ders - 2</item>
+        <item>Ders - 3</item>
+        <item>Ders - 4</item>
+        <item>Ders - 5</item>
+        <item>Ders - 6</item>
+        <item>Ders - 7</item>
+        <item>Ders - 8</item>
+        <item>Ders - 9</item>
+        <item>Ders - 10</item>
+        <item>Ders - 11</item>
+        <item>Ders - 12</item>
+        <item>Ders - 13</item>
+        <item>Ders - 14</item>
+        <item>Ders - 15</item>
+    </string-array>
+
+    <string name="vizeNotu">Vize</string>
+    <string name="finalNotu">Final</string>
+    <string name="butNotu">Butunleme</string>
+    <string name="ortNot">Sinif Ort.</string>
+
 
 </resources>

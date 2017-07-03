@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
     ImageView tabLogOut;
     ImageView oncekiTab;
     View oncekiView;
+    ListView notListView;
 
-    ImageView[] tabArray = new ImageView[6];
+    List<Not> notlar=new ArrayList<Not>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
         fillTabArray();
         oncekiTab = homeTab;
         oncekiView = findViewById(R.id.homeView);
+
+        notlar.add(new Not("AA", "Matematik", 40, 70, 0));
+        notlar.add(new Not("BA", "Algoritma", 40, 40, 100));
+        notlar.add(new Not("CD", "Lineer Cebir", 20, 37, 80));
+        notlar.add(new Not("CC", "Kimya", 19, 0, 0));
+        notlar.add(new Not("BA", "Hukuka Giris", 79, 70, 0));
+        notlar.add(new Not("FF", "Biyoloji", 100, 70, 0));
+        notlar.add(new Not("DC", "Felsefe", 40, 10, 41));
+        notlar.add(new Not("CC", "Ingilizce", 20, 90, 0));
+
+        notListView = (ListView) findViewById(R.id.notlar);
+        NotAdaptor adaptor = new NotAdaptor(this, notlar);
+        notListView.setAdapter(adaptor);
+
     }
 
     public void open_screen(View view){
@@ -68,35 +88,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         oncekiView.setVisibility(View.INVISIBLE);
+        assert mainView != null;
         mainView.setVisibility(View.VISIBLE);
         oncekiView = mainView;
 
     }
 
-    public void inviseThemAll(){
-        findViewById(R.id.homeView).setVisibility(View.INVISIBLE);
-        findViewById(R.id.markView).setVisibility(View.INVISIBLE);
-        findViewById(R.id.timetableView).setVisibility(View.INVISIBLE);
-        findViewById(R.id.calendarView).setVisibility(View.INVISIBLE);
-        findViewById(R.id.foodlistView).setVisibility(View.INVISIBLE);
-    }
-
-    private ImageView[] fillTabArray(){
+    private void fillTabArray(){
 
         homeTab = (ImageView) findViewById(R.id.menu_home);
-        tabArray[0] = homeTab;
         markTab = (ImageView) findViewById(R.id.menu_marks);
-        tabArray[1] = markTab;
         tabTimeTable = (ImageView) findViewById(R.id.menu_timetable);
-        tabArray[2] = tabTimeTable;
         tabCalendar = (ImageView) findViewById(R.id.menu_calender);
-        tabArray[3] = tabCalendar;
         tabFoodList = (ImageView) findViewById(R.id.menu_foodlist);
-        tabArray[4] = tabFoodList;
         tabLogOut = (ImageView) findViewById(R.id.menu_logout);
-        tabArray[5] = tabLogOut;
 
-        return tabArray;
     }
 
 }

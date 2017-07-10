@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.berkay.uumobil.MainActivity">
+
+    <group>
+        <item
+            android:id="@+id/naviga_failedCourses"
+            android:title="@string/naviga_failed_courses"
+            android:checkable="true"
+            android:onClick="open_screen"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/naviga_calendar"
+            android:title="@string/naviga_calendar"
+            android:checkable="true"
+            android:icon="@drawable/takvim_button"
+            android:onClick="open_screen"/>
+        <item
+            android:id="@+id/menu_food"
+            android:title="@string/naviga_foodlist"
+            android:checkable="true"
+            android:icon="@drawable/yemek_button"
+            android:onClick="open_screen"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/not_hesaplayici"
+            android:title="@string/naviga_calculator"
+            android:checkable="true"
+            android:onClick="open_screen"/>
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/menu_ayarlar"
+            android:title="@string/naviga_settings"
+            android:checkable="true"
+            android:onClick="open_screen"/>
+        <item
+            android:id="@+id/cikis_button"
+            android:title="@string/naviga_logout"
+            android:clickable="true"/>
+
+    </group>
+
+</menu>

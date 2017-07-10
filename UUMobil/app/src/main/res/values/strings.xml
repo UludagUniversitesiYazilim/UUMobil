@@ -1,43 +1,58 @@
 <resources>
     <string name="app_name">UÜMobil</string>
+
+    <!-- LogIn Screen Strings -->
     <string name="username">Kullanici Adi</string>
     <string name="password">Sifre</string>
     <string name="login">Giris</string>
     <string name="donAskAgain">Bir daha sorma</string>
+    <!-- LogIn Screen Strings -->
 
+    <!-- Content Descriptions -->
     <string name="facebookButton">UU_Facebook</string>
     <string name="twitterButton">UU_Twitter</string>
-    <string name="webButton">UU_Web_page</string>
+    <string name="webButton">UU_Web Sayfasi</string>
+    <string name="homeButton">Ev Ekrani</string>
+    <string name="markButton">Not Ekrani</string>
+    <string name="timetableButton">Ders Programi Ekrani</string>
+    <string name="calendarButton">Akademik Takvim Ekrani</string>
+    <string name="foodlistButton">Yemek Listesi Ekrani</string>
+    <string name="logoutButton">Cikis Butonu</string>
+    <string name="personImage">Kisi Resmi</string>
+    <!-- Content Description -->
 
+    <!-- BottomButton Strings -->
+    <string name="home_button">Ana Ekran</string>
+    <string name="mark_button">Transkript</string>
+    <string name="timetable_button">Programim</string>
+    <string name="calendar_button">A. Takvim</string>
+    <string name="foodlist_button">Yemek Listesi</string>
+    <!-- HomeButton Strings -->
+    
+    <!-- NavigationMenu Strings -->
+    <string name="naviga_headerText">Uludağ Üniversitesi Mobil Uygulaması</string>
+    <string name="naviga_failed_courses">Başarısız Olunan Dersler</string>
+    <string name="naviga_calendar">Akademik Takvim</string>
+    <string name="naviga_foodlist">Yemek Listesi</string>
+    <string name="naviga_calculator">Gano Hesaplama</string>
+    <string name="naviga_settings">Ayarlar</string>
+    <string name="naviga_logout">Çıkış</string>
+
+
+    <!-- Home Screen Strings -->
     <string name="noName">---- ISIM YOK ----</string>
     <string name="okulNo">Okul Numarasi:</string>
     <string name="fakulte">Birim:</string>
     <string name="bolum">Bolum:</string>
     <string name="ogrDurum">Ogrenci Tipi:</string>
     <string name="kayitDurum">Kayit Durumu:</string>
+    <!-- Home Screen Strings -->
 
-    <string-array name="dersler">
-        <item>Ders - 1</item>
-        <item>Ders - 2</item>
-        <item>Ders - 3</item>
-        <item>Ders - 4</item>
-        <item>Ders - 5</item>
-        <item>Ders - 6</item>
-        <item>Ders - 7</item>
-        <item>Ders - 8</item>
-        <item>Ders - 9</item>
-        <item>Ders - 10</item>
-        <item>Ders - 11</item>
-        <item>Ders - 12</item>
-        <item>Ders - 13</item>
-        <item>Ders - 14</item>
-        <item>Ders - 15</item>
-    </string-array>
-
+    <!--  Mark Screen Strings -->
     <string name="vizeNotu">Vize</string>
     <string name="finalNotu">Final</string>
     <string name="butNotu">Butunleme</string>
     <string name="ortNot">Sinif Ort.</string>
-
+    <!--  Mark Screen Strings -->
 
 </resources>

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m_drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.berkay.uumobil.MainActivity">
@@ -18,198 +18,195 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="@string/app_name">
+
+
+
+        </android.support.v7.widget.Toolbar>
 
         <LinearLayout
             android:id="@+id/menuLayout"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="56dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@color/colorPrimary"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
-            <ImageView
+
+            <LinearLayout
                 android:id="@+id/menu_home"
-                android:layout_width="32dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:layout_weight="0.001"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:onClick="open_screen"
                 android:background="@color/colorAccent"
-                app:srcCompat="@drawable/home_button"
-                android:onClick="open_screen" />
+                android:clickable="true">
 
-            <ImageView
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:contentDescription="@string/homeButton"
+                    app:srcCompat="@drawable/home_button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_button"
+                    android:textColor="@color/colorBack"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/menu_marks"
-                android:layout_width="32dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:layout_weight="0.001"
-                app:srcCompat="@drawable/not_karti_button"
-                android:onClick="open_screen" />
+                android:layout_gravity="center"
+                android:onClick="open_screen"
+                android:orientation="vertical">
 
-            <ImageView
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    app:srcCompat="@drawable/not_karti_button"
+                    android:contentDescription="@string/markButton"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mark_button"
+                    android:textColor="@color/colorBack"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/menu_timetable"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:layout_weight="0.001"
-                app:srcCompat="@drawable/dersprog_button"
-                android:onClick="open_screen" />
+                android:layout_gravity="center"
+                android:onClick="open_screen"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    app:srcCompat="@drawable/dersprog_button"
+                    android:contentDescription="@string/timetableButton"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timetable_button"
+                    android:textColor="@color/colorBack"
+                    android:textSize="12sp"
+                    android:paddingBottom="1dp"
+                    android:gravity="center"/>
 
-            <ImageView
-                android:id="@+id/menu_calender"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_calendar"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:layout_weight="0.001"
-                app:srcCompat="@drawable/takvim_button"
-                android:onClick="open_screen" />
+                android:layout_gravity="center"
+                android:onClick="open_screen"
+                android:orientation="vertical">
 
-            <ImageView
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    app:srcCompat="@drawable/takvim_button"
+                    android:contentDescription="@string/calendarButton"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calendar_button"
+                    android:textColor="@color/colorBack"
+                    android:textSize="12sp"
+                    android:paddingBottom="1dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/menu_foodlist"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:layout_weight="0.001"
-                app:srcCompat="@drawable/yemek_button"
-                android:onClick="open_screen" />
-
-            <ImageView
-                android:id="@+id/menu_logout"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="0.001"
-                app:srcCompat="@drawable/logout_button"
-                android:onClick="open_screen" />
+                android:orientation="vertical"
+                android:onClick="open_screen">
 
+                <ImageView
+
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/yemek_button"
+                    android:contentDescription="@string/foodlistButton"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foodlist_button"
+                    android:textColor="@color/colorBack"
+                    android:textSize="12sp"
+                    android:paddingBottom="1dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/menuLayout"
-            android:layout_alignParentTop="true">
+            android:layout_below="@id/toolbar"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp">
 
-
-            <LinearLayout
-                android:id="@+id/homeView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="invisible">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@color/colorBack"
-                    android:padding="15dp"
-                    android:layout_marginBottom="20dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="90dp"
-                        app:srcCompat="@drawable/no_photo"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/noName"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/okulNo"
-                    android:layout_weight="1"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/fakulte"
-                    android:layout_weight="1"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/bolum"
-                    android:layout_weight="1"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/ogrDurum"
-                    android:layout_weight="1"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/kayitDurum"
-                    android:layout_weight="1"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/markView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="invisible">
-
-                <ListView
-                    android:id="@+id/notlar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </ListView>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:id="@+id/timetableView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="visible">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/calendarView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="invisible">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/foodlistView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:visibility="invisible">
-
-
-            </LinearLayout>
+            <include layout="@layout/home_layout"/>
+            <include layout="@layout/not_layout"/>
+            <include layout="@layout/timetable_layout"/>
+            <include layout="@layout/calendar_layout"/>
+            <include layout="@layout/foodlist_layout"/>
 
         </FrameLayout>
 
     </RelativeLayout>
 
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_layout_items"
+        app:headerLayout="@layout/navigation_header">
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

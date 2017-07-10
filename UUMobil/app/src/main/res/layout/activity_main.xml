@@ -25,11 +25,7 @@
             android:layout_alignParentTop="true"
             android:background="@color/colorPrimary"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="@string/app_name">
-
-
-
-        </android.support.v7.widget.Toolbar>
+            app:title="@string/app_name"/>
 
         <LinearLayout
             android:id="@+id/menuLayout"
@@ -66,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/home_button"
-                    android:textColor="@color/colorBack"
+                    android:textColor="@color/colorWhite"
                     android:textSize="12sp"
                     android:gravity="center"/>
 
@@ -93,7 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/mark_button"
-                    android:textColor="@color/colorBack"
+                    android:textColor="@color/colorWhite"
                     android:textSize="12sp"
                     android:gravity="center"/>
 
@@ -118,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/timetable_button"
-                    android:textColor="@color/colorBack"
+                    android:textColor="@color/colorWhite"
                     android:textSize="12sp"
                     android:paddingBottom="1dp"
                     android:gravity="center"/>
@@ -146,7 +142,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/calendar_button"
-                    android:textColor="@color/colorBack"
+                    android:textColor="@color/colorWhite"
                     android:textSize="12sp"
                     android:paddingBottom="1dp"
                     android:gravity="center"/>
@@ -174,7 +170,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/foodlist_button"
-                    android:textColor="@color/colorBack"
+                    android:textColor="@color/colorWhite"
                     android:textSize="12sp"
                     android:paddingBottom="1dp"
                     android:gravity="center"/>
@@ -183,6 +179,7 @@
         </LinearLayout>
 
         <FrameLayout
+            android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/menuLayout"
@@ -190,11 +187,16 @@
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp">
 
-            <include layout="@layout/home_layout"/>
+            <!--<include layout="@layout/home_layout"/>
             <include layout="@layout/not_layout"/>
             <include layout="@layout/timetable_layout"/>
             <include layout="@layout/calendar_layout"/>
             <include layout="@layout/foodlist_layout"/>
+            <include layout="@layout/calculator_layout"/>
+            <include layout="@layout/failedcourses_layout"/>
+            <include layout="@layout/payment_layout"/>
+            <include layout="@layout/settings_layout"/>
+            <include layout="@layout/transkript_layout"/>-->
 
         </FrameLayout>
 

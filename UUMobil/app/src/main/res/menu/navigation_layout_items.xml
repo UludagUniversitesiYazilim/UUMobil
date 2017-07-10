@@ -2,14 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.berkay.uumobil.MainActivity">
-
-    <group>
-        <item
-            android:id="@+id/naviga_failedCourses"
-            android:title="@string/naviga_failed_courses"
-            android:checkable="true"
-            android:onClick="open_screen"/>
-    </group>
     <group>
         <item
             android:id="@+id/naviga_calendar"
@@ -18,7 +10,7 @@
             android:icon="@drawable/takvim_button"
             android:onClick="open_screen"/>
         <item
-            android:id="@+id/menu_food"
+            android:id="@+id/naviga_food"
             android:title="@string/naviga_foodlist"
             android:checkable="true"
             android:icon="@drawable/yemek_button"
@@ -27,23 +19,27 @@
 
     <group>
         <item
-            android:id="@+id/not_hesaplayici"
-            android:title="@string/naviga_calculator"
+            android:id="@+id/naviga_calculator"
             android:checkable="true"
-            android:onClick="open_screen"/>
+            android:icon="@android:drawable/checkbox_on_background"
+            android:onClick="open_screen"
+            android:title="@string/naviga_calculator" />
 
     </group>
 
     <group>
         <item
-            android:id="@+id/menu_ayarlar"
-            android:title="@string/naviga_settings"
+            android:id="@+id/naviga_ayarlar"
             android:checkable="true"
-            android:onClick="open_screen"/>
+            android:icon="@android:drawable/ic_partial_secure"
+            android:onClick="open_screen"
+            android:title="@string/naviga_settings" />
         <item
-            android:id="@+id/cikis_button"
-            android:title="@string/naviga_logout"
-            android:clickable="true"/>
+            android:id="@+id/naviga_logOutButton"
+            android:clickable="true"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:onClick="open_screen"
+            android:title="@string/naviga_logout" />
 
     </group>
 

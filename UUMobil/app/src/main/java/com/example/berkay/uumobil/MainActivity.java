@@ -1,8 +1,7 @@
 package com.example.berkay.uumobil;
 
-import android.support.design.internal.NavigationMenu;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.ViewPager;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,10 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.berkay.uumobil.UU_Fragments.*;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,12 +23,10 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout tabFoodList;
     LinearLayout oncekiTab;
     View oncekiView;
-    ListView notListView;
     DrawerLayout navigationView;
     Toolbar toolbar;
 
-    List<Not> notlar = new ArrayList<>();
-    List<CalendarContent> calendarPages = new ArrayList<>();
+    FragmentManager fragments;
 
 
     @Override
@@ -42,78 +38,44 @@ public class MainActivity extends AppCompatActivity {
         oncekiTab = homeTab;
         oncekiView = findViewById(R.id.homeView);
 
+        fragments = getFragmentManager();
+        FragmentTransaction transaction = fragments.beginTransaction();
+        transaction.add(R.id.content, new HomeFragment(),"HomeFragment");
+        transaction.commit();
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         navigationView = (DrawerLayout) findViewById(R.id.m_drawerLayout);
-        new ActionBarDrawerToggle(this, navigationView, toolbar, 0, 1).syncState();
+        new ActionBarDrawerToggle(this, navigationView, toolbar,
+                R.string.navigaIsOpened, R.string.navigaIsClosed).syncState();
 
-
-        //Musvedde!!!!!!!!!!
-        notlar.add(new Not("AA", "Matematik", 40, 70, 0));
-        notlar.add(new Not("AB", "Algoritma", 40, 40, 100));
-        notlar.add(new Not("CD", "Lineer Cebir", 20, 37, 80));
-        notlar.add(new Not("CC", "Kimya", 19, 0, 0));
-        notlar.add(new Not("AB", "Hukuka Giris", 79, 70, 0));
-        notlar.add(new Not("FF", "Biyoloji", 100, 70, 0));
-        notlar.add(new Not("CD", "Felsefe", 40, 10, 41));
-        notlar.add(new Not("CC", "Ingilizce", 20, 90, 0));
-        notlar.add(new Not("BC", "Edebiyat", 79, 70, 0));
-        notlar.add(new Not("DD", "Mukavemet", 100, 70, 0));
-        notlar.add(new Not("FF", "Almanca", 40, 10, 41));
-        notlar.add(new Not("CC", "Mikrobiyoloji", 20, 90, 0));
-        notlar.add(new Not("CC", "Ingilizce", 20, 90, 0));
-        notlar.add(new Not("BC", "Edebiyat", 79, 70, 0));
-        notlar.add(new Not("AA", "Matematik", 40, 70, 0));
-        notlar.add(new Not("AB", "Algoritma", 40, 40, 100));
-        notlar.add(new Not("CD", "Lineer Cebir", 20, 37, 80));
-        notlar.add(new Not("CD", "Felsefe", 40, 10, 41));
-        notlar.add(new Not("CC", "Ingilizce", 20, 90, 0));
-        notlar.add(new Not("BC", "Edebiyat", 79, 70, 0));
-        notlar.add(new Not("DD", "Mukavemet", 100, 70, 0));
-
-        notListView = (ListView) findViewById(R.id.notlar);
-        NotAdaptor adaptor = new NotAdaptor(this, notlar);
-        notListView.setAdapter(adaptor);
-
-        calendarPages.add(0, new CalendarContent("Ilk Ekran", "Ilk Ekranimiz"));
-        calendarPages.add(1, new CalendarContent("Ikinci Ekran", "Ikinci Ekranimiz"));
-
-        ViewPager calendarPager = (ViewPager) findViewById(R.id.akademikPages);
-        calendarPager.setAdapter(new CalendarAdapter(this, calendarPages));
     }
 
     public void open_screen(View view){
+        FragmentTransaction transaction = fragments.beginTransaction();
         LinearLayout item = (LinearLayout) view;
-        View mainView;
 
         oncekiTab.setBackgroundResource(R.color.colorPrimary);
         item.setBackgroundResource(R.color.colorAccent);
         oncekiTab = item;
 
-
         switch (view.getId()){
             case (R.id.menu_home):
-                mainView = findViewById(R.id.homeView);
+                transaction.replace(R.id.content, new HomeFragment(), "HomeFragment");
                 break;
             case (R.id.menu_marks):
-                mainView = findViewById(R.id.markView);
+                transaction.replace(R.id.content, new MarksFragment(), "MarksFragment");
                 break;
             case (R.id.menu_timetable):
-                mainView = findViewById(R.id.timetableView);
+                transaction.replace(R.id.content, new TimeTableFragment(), "TimeTableFragment");
                 break;
             case (R.id.menu_calendar):
-                mainView = findViewById(R.id.calendarView);
+                transaction.replace(R.id.content, new CalendarFragment(), "CalendarFragment");
                 break;
             case (R.id.menu_foodlist):
-                mainView = findViewById(R.id.foodlistView);
+                transaction.replace(R.id.content, new FoodListFragment(), "CalendarFragment");
                 break;
-            default:
-                mainView = null;
         }
-
-        oncekiView.setVisibility(View.INVISIBLE);
-        assert mainView != null;
-        mainView.setVisibility(View.VISIBLE);
-        oncekiView = mainView;
+        transaction.commit();
     }
 
     private void fillTabArray(){
@@ -126,6 +88,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void open_screen(MenuItem item) {
+        View selectedView;
+        oncekiTab.setBackgroundResource(R.color.colorPrimary);
+
+        switch (item.getItemId()){
+            case (R.id.naviga_calendar):
+                selectedView = findViewById(R.id.calendarView);
+                break;
+            case (R.id.naviga_food):
+                selectedView = findViewById(R.id.foodlistView);
+                break;
+            case (R.id.naviga_calculator):
+                selectedView = findViewById(R.id.ViewCalculator);
+                break;
+            case (R.id.naviga_ayarlar):
+                selectedView = findViewById(R.id.ViewSettings);
+                break;
+            case (R.id.naviga_logOutButton):
+                selectedView = oncekiView;
+                this.finish();
+                break;
+            default:
+                selectedView = oncekiView;
+                break;
+        }
+        oncekiView.setVisibility(View.INVISIBLE);
+        selectedView.setVisibility(View.VISIBLE);
+        oncekiView = selectedView;
+
         navigationView.closeDrawers();
     }
 }

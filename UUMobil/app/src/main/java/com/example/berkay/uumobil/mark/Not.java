@@ -1,4 +1,4 @@
-package com.example.berkay.uumobil;
+package com.example.berkay.uumobil.mark;
 
 
 public final class Not {

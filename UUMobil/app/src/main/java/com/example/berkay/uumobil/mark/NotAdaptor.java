@@ -1,24 +1,26 @@
-package com.example.berkay.uumobil;
+package com.example.berkay.uumobil.mark;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.berkay.uumobil.R;
+import com.example.berkay.uumobil.mark.Not;
+
 import java.util.List;
 
 
-final class NotAdaptor extends BaseAdapter {
+final public class NotAdaptor extends BaseAdapter {
 
     private LayoutInflater myInflater;
     private List<Not> NotList;
 
 
-    NotAdaptor(Activity activity, List<Not> notList){
+    public NotAdaptor(Activity activity, List<Not> notList){
         myInflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         NotList = notList;
     }

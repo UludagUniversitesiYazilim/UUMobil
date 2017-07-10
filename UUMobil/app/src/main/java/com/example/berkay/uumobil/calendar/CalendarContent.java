@@ -1,8 +1,4 @@
-package com.example.berkay.uumobil;
-
-/**
- * Created by berkay on 7/8/17.
- */
+package com.example.berkay.uumobil.calendar;
 
 public class CalendarContent {
 

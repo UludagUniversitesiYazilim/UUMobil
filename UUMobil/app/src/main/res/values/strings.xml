@@ -30,8 +30,10 @@
     <!-- HomeButton Strings -->
     
     <!-- NavigationMenu Strings -->
+    <string name="navigaIsOpened">NavigationMenu açık</string>
+    <string name="navigaIsClosed">NavigationMenu kapalı</string>
     <string name="naviga_headerText">Uludağ Üniversitesi Mobil Uygulaması</string>
-    <string name="naviga_failed_courses">Başarısız Olunan Dersler</string>
+    <string name="naviga_failed_courses">Başarısız Dersler</string>
     <string name="naviga_calendar">Akademik Takvim</string>
     <string name="naviga_foodlist">Yemek Listesi</string>
     <string name="naviga_calculator">Gano Hesaplama</string>

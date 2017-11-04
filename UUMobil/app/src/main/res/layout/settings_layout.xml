@@ -3,23 +3,24 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/ViewSettings"
-    android:visibility="invisible">
+    android:visibility="visible">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:layout_margin="7dp">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Bildirimleri Kullan"
+                android:text="@string/settingNotifications"
                 android:textSize="20sp"
                 android:padding="7dp"
                 android:layout_weight="0.8"/>
@@ -36,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:layout_margin="7dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -57,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="5dp">
+        android:layout_margin="7dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -78,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="5dp">
+            android:layout_margin="7dp">
 
             <TextView
                 android:layout_width="0dp"

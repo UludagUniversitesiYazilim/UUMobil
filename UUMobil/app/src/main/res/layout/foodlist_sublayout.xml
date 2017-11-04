@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/foodlistView_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"/>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foodlistView"
+    android:layout_below="@+id/foodlistView_date"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yemekListesiBaslik"
+            android:text="@string/ogleNormal"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/yemekListesiIcerik"/>
+
+        <TextView
+            android:id="@+id/ogle_yemek_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/ogle_yemek_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/ogle_yemek_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/ogle_yemek_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yemekListesiBaslik"
+            android:text="@string/ogleVejeteryan"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/yemekListesiIcerik"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yemekListesiBaslik"
+            android:text="@string/aksamNormal"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/yemekListesiIcerik"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yemekListesiBaslik"
+            android:text="@string/aksamVejeteryan"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/yemekListesiIcerik"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginBottom="12dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
+

@@ -42,7 +42,7 @@
                 android:id="@+id/menu_home"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.001"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:orientation="vertical"
                 android:onClick="open_screen"
@@ -51,11 +51,11 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:layout_margin="3dp"
-                    android:contentDescription="@string/homeButton"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/home_button"
                     app:srcCompat="@drawable/home_button" />
 
                 <TextView
@@ -63,7 +63,34 @@
                     android:layout_height="wrap_content"
                     android:text="@string/home_button"
                     android:textColor="@color/colorWhite"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_transkript"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:onClick="open_screen"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/transkript_button"
+                    android:contentDescription="@string/Transkript_button"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Transkript_button"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -72,25 +99,24 @@
                 android:id="@+id/menu_marks"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.001"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:onClick="open_screen"
                 android:orientation="vertical">
-
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:layout_margin="3dp"
+                    android:layout_marginTop="8dp"
                     app:srcCompat="@drawable/not_karti_button"
-                    android:contentDescription="@string/markButton"/>
-
+                    android:contentDescription="@string/mark_button"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/mark_button"
                     android:textColor="@color/colorWhite"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
+                    android:paddingBottom="1dp"
                     android:gravity="center"/>
 
             </LinearLayout>
@@ -99,81 +125,53 @@
                 android:id="@+id/menu_timetable"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.001"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:onClick="open_screen"
                 android:orientation="vertical">
+
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:layout_margin="3dp"
+                    android:layout_marginTop="8dp"
                     app:srcCompat="@drawable/dersprog_button"
-                    android:contentDescription="@string/timetableButton"/>
+                    android:contentDescription="@string/timetable_button"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/timetable_button"
                     android:textColor="@color/colorWhite"
-                    android:textSize="12sp"
-                    android:paddingBottom="1dp"
-                    android:gravity="center"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/menu_calendar"
-                android:layout_width="30dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.001"
-                android:layout_gravity="center"
-                android:onClick="open_screen"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="3dp"
-                    app:srcCompat="@drawable/takvim_button"
-                    android:contentDescription="@string/calendarButton"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/calendar_button"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
                     android:paddingBottom="1dp"
                     android:gravity="center"/>
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/menu_foodlist"
+                android:id="@+id/menu_more"
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.001"
+                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:orientation="vertical"
                 android:onClick="open_screen">
 
                 <ImageView
-
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_margin="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="8dp"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/yemek_button"
-                    android:contentDescription="@string/foodlistButton"/>
+                    app:srcCompat="@drawable/more_button"
+                    android:contentDescription="@string/more_button" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/foodlist_button"
+                    android:text="@string/more_button"
                     android:textColor="@color/colorWhite"
-                    android:textSize="12sp"
-                    android:paddingBottom="1dp"
-                    android:gravity="center"/>
+                    android:textSize="10sp"
+                    android:gravity="center" />
 
             </LinearLayout>
         </LinearLayout>
@@ -186,18 +184,6 @@
             android:layout_below="@id/toolbar"
             tools:layout_editor_absoluteY="0dp"
             tools:layout_editor_absoluteX="0dp">
-
-            <!--<include layout="@layout/home_layout"/>
-            <include layout="@layout/not_layout"/>
-            <include layout="@layout/timetable_layout"/>
-            <include layout="@layout/calendar_layout"/>
-            <include layout="@layout/foodlist_layout"/>
-            <include layout="@layout/calculator_layout"/>
-            <include layout="@layout/failedcourses_layout"/>
-            <include layout="@layout/payment_layout"/>
-            <include layout="@layout/settings_layout"/>
-            <include layout="@layout/transkript_layout"/>-->
-
         </FrameLayout>
 
     </RelativeLayout>
@@ -206,7 +192,7 @@
         android:id="@+id/navigationMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
+        android:layout_gravity="end"
         app:menu="@menu/navigation_layout_items"
         app:headerLayout="@layout/navigation_header">
 

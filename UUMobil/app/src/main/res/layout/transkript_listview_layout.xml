@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/transcript_courseName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- - -  Başlık  - - -"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:id="@+id/transcript_exam_1_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transcript_courseName"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transkript_akts"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/transcript_akts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transcript_exam_2_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transcript_courseName"
+        android:layout_toRightOf="@id/transcript_exam_1_container"
+        android:layout_margin="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transcript_credit"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/transcript_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/transcript_exam_3_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transcript_courseName"
+        android:layout_toRightOf="@id/transcript_exam_2_container"
+        android:layout_margin="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transcript_avr"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/transcript_avr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transcript_point"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:background="@drawable/borders"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -8,10 +8,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/subcalendar_title"
-        android:text="Guz donemi"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Güz Dönemi"
         android:gravity="center"
-        android:textSize="18sp"
-        android:padding="4dp"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"/>
 

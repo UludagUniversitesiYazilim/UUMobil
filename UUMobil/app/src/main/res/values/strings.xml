@@ -2,9 +2,9 @@
     <string name="app_name">UÜMobil</string>
 
     <!-- LogIn Screen Strings -->
-    <string name="username">Kullanici Adi</string>
-    <string name="password">Sifre</string>
-    <string name="login">Giris</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş</string>
     <string name="donAskAgain">Bir daha sorma</string>
     <!-- LogIn Screen Strings -->
 
@@ -12,23 +12,18 @@
     <string name="facebookButton">UU_Facebook</string>
     <string name="twitterButton">UU_Twitter</string>
     <string name="webButton">UU_Web Sayfasi</string>
-    <string name="homeButton">Ev Ekrani</string>
-    <string name="markButton">Not Ekrani</string>
-    <string name="timetableButton">Ders Programi Ekrani</string>
-    <string name="calendarButton">Akademik Takvim Ekrani</string>
-    <string name="foodlistButton">Yemek Listesi Ekrani</string>
     <string name="logoutButton">Cikis Butonu</string>
     <string name="personImage">Kisi Resmi</string>
-    <!-- Content Description -->
+    <!-- Content Descriptions -->
 
     <!-- BottomButton Strings -->
     <string name="home_button">Ana Ekran</string>
-    <string name="mark_button">Transkript</string>
-    <string name="timetable_button">Programim</string>
-    <string name="calendar_button">A. Takvim</string>
-    <string name="foodlist_button">Yemek Listesi</string>
+    <string name="Transkript_button">Not Kartım</string>
+    <string name="mark_button">Sonuçlarım</string>
+    <string name="timetable_button">Programım</string>
+    <string name="more_button">Daha Fazla..</string>
     <!-- HomeButton Strings -->
-    
+
     <!-- NavigationMenu Strings -->
     <string name="navigaIsOpened">NavigationMenu açık</string>
     <string name="navigaIsClosed">NavigationMenu kapalı</string>
@@ -39,22 +34,50 @@
     <string name="naviga_calculator">Gano Hesaplama</string>
     <string name="naviga_settings">Ayarlar</string>
     <string name="naviga_logout">Çıkış</string>
-
+    <!-- NavigationMenu Strings -->
 
     <!-- Home Screen Strings -->
     <string name="noName">---- ISIM YOK ----</string>
     <string name="okulNo">Okul Numarasi:</string>
-    <string name="fakulte">Birim:</string>
-    <string name="bolum">Bolum:</string>
-    <string name="ogrDurum">Ogrenci Tipi:</string>
-    <string name="kayitDurum">Kayit Durumu:</string>
+    <string name="donem">Dönem:</string>
+    <string name="bolum">Bölüm:</string>
+    <string name="ogrDurum">Öğrenci Tipi:</string>
+    <string name="kayitTarih">Kayıt Tarihi:</string>
     <!-- Home Screen Strings -->
 
     <!--  Mark Screen Strings -->
     <string name="vizeNotu">Vize</string>
     <string name="finalNotu">Final</string>
-    <string name="butNotu">Butunleme</string>
-    <string name="ortNot">Sinif Ort.</string>
+    <string name="butNotu">Bütünleme</string>
     <!--  Mark Screen Strings -->
+
+    <!-- FoodList Screen Strings -->
+    <string name="ogleNormal">Öğle Yemeği</string>
+    <string name="ogleVejeteryan">Öğle Yemeği (Vejeteryan)</string>
+    <string name="aksamNormal">Akşam Yemeği</string>
+    <string name="aksamVejeteryan">Akşam Yemeği (Vejeteryen)</string>
+    <!-- FoodList Screen Strings -->
+
+    <!-- Settings Screen Strings -->
+    <string name="settingNotifications">Bildirimleri göster</string>
+    <!-- Settings Screen Strings -->
+
+    <!-- Transkcript Screen Strings -->
+    <string name="transcript_credit">Kredi</string>
+    <string name="transkript_akts">AKTS</string>
+    <string name="transcript_avr">Sın. Ort</string>
+    <!-- Transkcript Screen Strings -->
+
+    <!-- Mark Screen Strings -->
+    <string name="marks_headerCourseName">Ders Adı</string>
+    <string name="marks_headerExamType">Tip</string>
+    <string name="marks_headerResult">Puan</string>
+    <string name="marks_headerAverageOfClass">Sınıf</string>
+    <!-- Mark Screen Strings -->
+
+    <!-- Calendar Screen Strings -->
+    <string name="calendar_first">Güz Dönemi</string>
+    <string name="calendar_second">Bahar Dönemi</string>
+    <!-- Calendar Screen Strings -->
 
 </resources>

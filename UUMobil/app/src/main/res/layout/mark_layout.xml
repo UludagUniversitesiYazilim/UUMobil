@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/markView"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/marks_headerCourseName"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="0.16"
+            android:textStyle="bold"
+            android:text="@string/marks_headerExamType"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="0.16"
+            android:textStyle="bold"
+            android:text="@string/marks_headerResult"
+            android:gravity="center"/>
+
+        <!--<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="0.16"
+            android:textStyle="bold"
+            android:text="@string/marks_headerAverageOfClass"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"/>-->
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/marks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

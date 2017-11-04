@@ -14,4 +14,7 @@
 
     <color name="yemekListesiBaslik">#0e5d7f</color>
     <color name="yemekListesiIcerik">#cecece</color>
+
+    <color name="notAyırıcı2">#c0cee5</color>
+    <color name="notAyırıcı">#fff47c</color>
 </resources>

@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void log_in(View button){
-        /**
+        /*
          * =====--- LogIn button onclick event function  ---=====
          *
          *      This methods starts new activity. At least now
@@ -24,8 +24,6 @@ public class LoginActivity extends AppCompatActivity {
 
         String user_name;
         String user_password;
-
-        Intent goMain = new Intent(LoginActivity.this, MainActivity.class);
         EditText u_edit_text;
         EditText p_edit_text;
 
@@ -34,10 +32,14 @@ public class LoginActivity extends AppCompatActivity {
         user_name     = u_edit_text.getText().toString();
         user_password = p_edit_text.getText().toString();
 
-        goMain.putExtra("UserName", user_name);
+        Intent goMain = new Intent(LoginActivity.this, MainActivity.class);
+
+        goMain.putExtra("Username", user_name);
         goMain.putExtra("Password", user_password);
 
         startActivity(goMain);
+        this.finish();
+
 
     }
 }

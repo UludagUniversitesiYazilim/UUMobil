@@ -35,7 +35,7 @@ public final class CalendarAdapter extends PagerAdapter {
     }
 
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public View instantiateItem(ViewGroup container, int position) {
         // Bu metod her item icin calisir. (Dongu icindedir.)
 
         View view = calendarPageView.inflate(R.layout.subcalendar_layout, container, false);

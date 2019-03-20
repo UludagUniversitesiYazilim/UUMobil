@@ -17,7 +17,7 @@ Here are some plans that i don't know when i implemet :
 4. Build a cloud infrastructure for managing **notifications**, caching infos and less internet badwith. This is my infrastructure plan:
 
 <center>
-	<img src="./media/Plan.jpg" width=600px />
+	<img src="./media/Plan.jpg" />
 </center>
 
 

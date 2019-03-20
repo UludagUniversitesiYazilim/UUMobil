@@ -16,12 +16,16 @@ Here are some plans that i don't know when i implemet :
 3. Share the app on Google Play store. (if i do that i should code the IOS version also)
 4. Build a cloud infrastructure for managing **notifications**, caching infos and less internet badwith. This is my infrastructure plan:
 
+<center>
+	<img src="./media/Plan.jpg" width=600px />
+</center>
+
 
 ## Some Screenshots
 <center>
-	<img src="./media/Login.png" width=250px>
-	<img src="./media/Profile.png" width=250px>
-	<img src="./media/Transcript.png" width=250px>
-	<img src="./media/Menu.png" width=250px>
+	<img src="./media/Login.png" width=250px />
+	<img src="./media/Profile.png" width=250px />
+	<img src="./media/Transcript.png" width=250px />
+	<img src="./media/Menu.png" width=250px />
 </center>
 

@@ -27,5 +27,9 @@ Here are some plans that i don't know when i implemet :
 	<img src="./media/Profile.png" width=250px />
 	<img src="./media/Transcript.png" width=250px />
 	<img src="./media/Menu.png" width=250px />
+	<img src="./media/notes.png" width=250px />
+	<img src="./media/foodlist.png" width=250px />
+	<img src="./media/settings.png" width=250px />
+	
 </p>
 

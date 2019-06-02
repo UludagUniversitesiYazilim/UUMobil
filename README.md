@@ -22,10 +22,10 @@ Here are some plans that i don't know when i implemet :
 
 
 ## Some Screenshots
-<center>
+<p align="center">
 	<img src="./media/Login.png" width=250px />
 	<img src="./media/Profile.png" width=250px />
 	<img src="./media/Transcript.png" width=250px />
 	<img src="./media/Menu.png" width=250px />
-</center>
+</p>
 
